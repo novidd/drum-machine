@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root #drum-machine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#root #drum-machine #display-wrapper {
+  text-align: center;
+  height: 25px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root #drum-machine #buttons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#root #drum-machine #buttons-wrapper .drum-pad {
+  background-color: #eee;
+  border: none;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px #aaa;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+#root #drum-machine #buttons-wrapper .drum-pad:hover {
+  background-color: #ddd;
+}
+
+#root #drum-machine #buttons-wrapper .drum-pad:focus {
+  outline: none;
+}
+
+#root #drum-machine #dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#root #drum-machine #dashboard input {
+  width: 90%;
+  margin: 5px 0 0 0;
+}
+/*# sourceMappingURL=main.css.map */

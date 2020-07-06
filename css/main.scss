@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #drum-machine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    #display-wrapper{
+      text-align: center;
+      height: 25px;
+      min-width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #buttons-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .drum-pad {
+        background-color: #eee;
+        border: none;
+        padding: 30px 35px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 3px #aaa;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        
+        &:hover {
+          background-color: #ddd;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    #dashboard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
+
+      input {
+        width: 90%;
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+}
+
